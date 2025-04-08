@@ -1,0 +1,168 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles - Element Selector */
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #121212;
+    padding: 20px;
+}
+
+/* Header styles - ID Selector */
+#main-header {
+    background-color: #e509c8;
+    color: white;
+    padding: 20px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+#main-header h1 {
+    font-family: 'Bebas Neue', 'Impact', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+/* Navigation styles - Class Selector */
+.navigation ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navigation a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navigation a:hover {
+    background-color: white;
+    color: #e50914;
+}
+
+/* Main content styles */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Featured post - Class Selector */
+.featured-post {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(229, 9, 20, 0.2);
+}
+
+.featured-post h2 {
+    color: #e50991;
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.post-meta {
+    color: #aaa;
+    font-style: italic;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+/* Image styling */
+.feature-image {
+    width: 100%;
+    border-radius: 5px;
+    margin: 15px 0 20px 0;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    border: 3px solid #333;
+    transition: transform 0.3s ease;
+}
+
+.feature-image:hover {
+    transform: scale(1.01);
+}
+
+/* Paragraphs in featured post */
+.featured-post p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    font-size: 1.1rem;
+}
+
+/* Movie highlights section */
+.movie-highlights {
+    background-color: #1f1f1f;
+    color: #f5f5f5;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(229, 9, 20, 0.2);
+}
+
+.movie-highlights h2 {
+    color: #e50989;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+
+/* Individual movie containers */
+.movie {
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #2d2d2d;
+    border-left: 4px solid #e50914;
+    border-radius: 0 5px 5px 0;
+    transition: transform 0.2s ease;
+}
+
+.movie:hover {
+    transform: translateX(5px);
+}
+
+.movie h3 {
+    color: #fff;
+    margin-bottom: 8px;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    color: #aaa;
+    border-top: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .navigation ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    #main-header h1 {
+        font-size: 2rem;
+    }
+    
+    .featured-post, .movie-highlights {
+        padding: 15px;
+    }
+}
